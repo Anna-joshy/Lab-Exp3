@@ -28,8 +28,10 @@ notepad app.py
 
 
 Paste:
-def add(a, b):    return a + bif __name__ == "__main__":    print("Python CI Docker Lab")    print("Addition:", add(2, 3))
-
+def add(a, b):    
+  return a + bif __name__ == "__main__":    
+  print("Python CI Docker Lab")    
+  print("Addition:", add(2, 3))
 
 
 Create test_app.py:
@@ -37,7 +39,8 @@ notepad test_app.py
 
 
 Paste:
-from app import adddef test_add():    assert add(2, 3) == 5
+from app import adddef test_add():    
+  assert add(2, 3) == 5
 
 
 
@@ -54,6 +57,7 @@ CMD ["python", "app.py"]
 
 
 Save all three files. Make sure the Dockerfile is named exactly Dockerfile, not Dockerfile.txt.
+
 Step 3 – Install and test Python
 python -m pip install pytest
 python app.py
